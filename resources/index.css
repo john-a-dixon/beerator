@@ -15,7 +15,25 @@
 	--lightest-grey:  hsl(0, 0%, 74%);
 }
 
-html, body {
+html, body, main {
 	height: 100%;
 	width: 100%;
+}
+
+main {
+	background-color: var(--darkest-grey);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main > article {
+	height: 800px;
+	width: 550px;
+	background-color: var(--lightest-grey);
+	border-radius: 25px;
+}
+
+.criterion {
+	display: flex;
 }
