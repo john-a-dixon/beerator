@@ -37,3 +37,17 @@ main > article {
 .criterion {
 	display: flex;
 }
+
+.criterion button {
+	height: 50px;
+	width: 50px;
+	border-color: transparent;
+}
+
+.criterion div {
+	width: 350px;
+}
+
+#final-rating {
+	display: flex;
+}
