@@ -1,0 +1,16 @@
+/***************************************************GLOBALS***************************************************/
+* { /*Removes the default margins and padding and makes element sizing more accurate*/
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	flex-shrink: 0;
+}
+
+:root {
+	font-size: 16px;
+	--darkest-grey: hsl(0, 0%, 10%);
+	--dark-grey: hsl(0, 0%, 26%);
+	--middle-grey: hsl(0, 0%, 42%);
+	--light-grey:  hsl(0, 0%, 58%);
+	--lightest-grey:  hsl(0, 0%, 74%);
+}
