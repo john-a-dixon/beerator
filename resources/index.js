@@ -40,8 +40,8 @@ const calculateRating = () => {
 
 const handleClick = event => {
 
-    if(event.type === 'touchstart') //If the event is triggered by a touch, this small branch prevents the code from being triggered again as a click.
-        event.preventDefault();
+    /*if(event.type === 'touchstart') //If the event is triggered by a touch, this small branch prevents the code from being triggered again as a click.
+        event.preventDefault();*/
 
     const direction = event.target.getAttribute('class');
     const criterion = criteria[event.target.parentNode.id];
