@@ -101,7 +101,7 @@ p {
 }
 
 button {
-	transition: background-color 0.15s;
+	transition: background-color 0.05s;
 }
 
 button:active {

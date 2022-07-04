@@ -31,6 +31,12 @@ const criteria = {
     finalRatingCounter: 0
 }
 
+let eventIsTouch = false;
+
+/***************************************************Get the DOM elements***************************************************/
+const buttons = document.querySelectorAll('.criterion button');
+const resetButton = document.querySelector('#final-rating button');
+
 /***************************************************Functions for the event handlers***************************************************/
 const calculateRating = () => {
     let rating = 0;
@@ -40,8 +46,13 @@ const calculateRating = () => {
 
 const handleClick = event => {
 
-    /*if(event.type === 'touchstart') //If the event is triggered by a touch, this small branch prevents the code from being triggered again as a click.
-        event.preventDefault();*/
+    if(event.type === 'touchstart' && eventIsTouch === false) {  //If the event is triggered by a touch, this small branch prevents the code from being triggered again as a click.
+        eventIsTouch = true;
+        resetButton.removeEventListener('click', handleClick);
+        buttons.forEach(button => {
+            button.removeEventListener('click', handleClick);
+        });
+    }
 
     const direction = event.target.getAttribute('class');
     const criterion = criteria[event.target.parentNode.id];
@@ -70,10 +81,6 @@ const reset = () => {
     
     document.querySelector('#final-rating button').innerHTML = calculateRating();
 }
-
-/***************************************************Get the DOM elements***************************************************/
-const buttons = document.querySelectorAll('.criterion button');
-const resetButton = document.querySelector('#final-rating button');
 
 /***************************************************Add event handlers to the DOM elements***************************************************/
 buttons.forEach(button => {
