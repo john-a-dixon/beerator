@@ -70,11 +70,21 @@ h2, p {
 	text-align: center;
 }
 
+h2 {
+	font-family: 'Laila', sans-serif;
+	text-decoration: underline;
+}
+
+p {
+	font-family: 'Titillium Web', sans-serif;
+}
 #final-rating button {
 	height: 100px;
 	width: 100px;
 	border-radius: 50%;
 	border-color: transparent;
+	font-family: 'Domine', serif;
+	font-size: 2.25rem;
 }
 
 /***************************************************Media Queries***************************************************/
