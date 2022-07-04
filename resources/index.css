@@ -17,6 +17,7 @@
 
 html, body, main {
 	width: 100%;
+	height: 100%;
 }
 
 main {
@@ -73,54 +74,22 @@ h2, p {
 		width: 100%;
 		border-radius: 0px;
 	}
-
-	button {
-		background-color: blue;
-	}
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 475px) {
 	.criterion {
 		width: 80%;
 	}
-	button {
-		background-color: black;
-	}
 }
 
-@media only screen and (max-width: 435px) {
+@media only screen and (max-width: 450px) {
 	.criterion {
 		width: 85%;
 	}
-	button {
-		background-color: red;
-	}
 }
 
-@media only screen and (max-width: 405px) {
-	h2 {
-		font-size: 1.3rem;
-	}
-	button {
-		background-color: yellow;
-	}
-}
-
-@media only screen and (max-width: 360px) {
-	.criterion button {
-		height: 40px;
-		width: 40px;
-	}
-	button {
-		background-color: purple;
-	}
-}
-
-@media only screen and (max-width: 336px){
-	h2 {
-		font-size: 1.2rem;
-	}
-	button {
-		background-color: brown;
+@media only screen and (max-width: 420px) {
+	.criterion h2 {
+		font-size: 1.25rem;
 	}
 }
