@@ -100,6 +100,13 @@ p {
 	color: var(--main-color);
 }
 
+button {
+	transition: background-color 0.15s;
+}
+
+button:active {
+	background-color: #caffc2;
+}
 /***************************************************Media Queries***************************************************/
 @media only screen and (max-width: 550px) {
 	main > article {
