@@ -55,7 +55,7 @@ const handleClick = event => {
     }
 
     document.querySelector(`#${event.target.parentNode.id} p`).innerHTML = criterion.options[criterion.rating];
-    document.getElementById('final-rating').children[1].innerHTML = calculateRating();
+    document.querySelector('#final-rating button').innerHTML = calculateRating();
 }
 
 const reset = () => {
@@ -68,7 +68,7 @@ const reset = () => {
         }
     }
     
-    document.getElementById('final-rating').children[1].innerHTML = calculateRating();
+    document.querySelector('#final-rating button').innerHTML = calculateRating();
 }
 
 /***************************************************Get the DOM elements***************************************************/
