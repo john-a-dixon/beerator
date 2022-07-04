@@ -13,6 +13,12 @@
 	--middle-grey: hsl(0, 0%, 42%);
 	--light-grey:  hsl(0, 0%, 58%);
 	--lightest-grey:  hsl(0, 0%, 74%);
+
+	--main-color: #78F765;
+	--dark-accent-one: #122E0E;
+	--dark-accent-two: #494485;
+	--light-accent-one: #F78E4D;
+	--light-accent-two: #FFEFE6;
 }
 
 html, body, main {
@@ -20,7 +26,7 @@ html, body, main {
 }
 
 html, body {
-	background-color: var(--darkest-grey);
+	background-color: var(--dark-accent-two);
 }
 
 body {
@@ -30,7 +36,7 @@ body {
 }
 
 main {
-	background-color: var(--darkest-grey);
+	background-color: var(--dark-accent-two);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -39,7 +45,7 @@ main {
 main > article {
 	height: 900px;
 	width: 500px;
-	background-color: var(--lightest-grey);
+	background-color: var(--light-accent-two);
 	border-radius: 25px;
 
 	display: flex;
@@ -64,6 +70,8 @@ main > article {
 	height: 50px;
 	width: 50px;
 	border-color: transparent;
+	background-color: var(--main-color);
+	color: var(--dark-accent-one);
 }
 
 h2, p {
@@ -73,11 +81,14 @@ h2, p {
 h2 {
 	font-family: 'Laila', sans-serif;
 	text-decoration: underline;
+	color: var(--dark-accent-two);
 }
 
 p {
 	font-family: 'Titillium Web', sans-serif;
+	color: var(--dark-accent-one);
 }
+
 #final-rating button {
 	height: 100px;
 	width: 100px;
@@ -85,6 +96,8 @@ p {
 	border-color: transparent;
 	font-family: 'Domine', serif;
 	font-size: 2.25rem;
+	background-color: var(--dark-accent-two);
+	color: var(--main-color);
 }
 
 /***************************************************Media Queries***************************************************/
