@@ -66,38 +66,41 @@ h2, p {
 }
 
 /***************************************************Media Queries***************************************************/
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 550px) {
 	main > article {
-		height: 700px;
-		width: 400px;
-	}
-
-	h2 {
-		font-size: 1rem;
-	}
-	
-	p {
-		font-size: 0.75rem;
-	}
-
-	.criterion button {
-		height: 40px;
-		width: 40px;
-		border-color: transparent;
+		height: 100%;
+		width: 100%;
+		border-radius: 0px;
 	}
 }
 
-@media only screen and (max-width: 450px) {
-	main > article {
-		height: 700px;
-		width: 300px;
+@media only screen and (max-width: 470px) {
+	.criterion {
+		width: 80%;
 	}
+}
 
-	h2 {
-		font-size: 0.75rem;
+@media only screen and (max-width: 430px) {
+	.criterion {
+		width: 85%;
 	}
-	
-	p {
-		font-size: 0.5rem;
+}
+
+@media only screen and (max-width: 400px) {
+	h2 {
+		font-size: 1.3rem;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	.criterion button {
+		height: 40px;
+		width: 40px;
+	}
+}
+
+@media only screen and (max-width: 336px){
+	h2 {
+		font-size: 1.2rem;
 	}
 }
