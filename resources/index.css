@@ -88,7 +88,7 @@ h2, p {
 	}
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 435px) {
 	.criterion {
 		width: 85%;
 	}
@@ -97,7 +97,7 @@ h2, p {
 	}
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 405px) {
 	h2 {
 		font-size: 1.3rem;
 	}
