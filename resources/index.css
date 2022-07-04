@@ -29,13 +29,26 @@ main {
 
 main > article {
 	height: 800px;
-	width: 550px;
+	width: 500px;
 	background-color: var(--lightest-grey);
 	border-radius: 25px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .criterion {
+	width: 75%;
 	display: flex;
+	justify-content: space-between;
+}
+
+.criterion div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .criterion button {
@@ -44,10 +57,47 @@ main > article {
 	border-color: transparent;
 }
 
-.criterion div {
-	width: 350px;
+h2, p {
+	text-align: center;
 }
 
 #final-rating {
 	display: flex;
+}
+
+/***************************************************Media Queries***************************************************/
+@media only screen and (max-width: 500px) {
+	main > article {
+		height: 700px;
+		width: 400px;
+	}
+
+	h2 {
+		font-size: 1rem;
+	}
+	
+	p {
+		font-size: 0.75rem;
+	}
+
+	.criterion button {
+		height: 40px;
+		width: 40px;
+		border-color: transparent;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	main > article {
+		height: 700px;
+		width: 300px;
+	}
+
+	h2 {
+		font-size: 0.75rem;
+	}
+	
+	p {
+		font-size: 0.5rem;
+	}
 }
