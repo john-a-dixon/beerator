@@ -45,6 +45,12 @@ main > article {
 	justify-content: space-between;
 }
 
+.criterion div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
 .criterion button {
 	height: 50px;
 	width: 50px;
@@ -78,5 +84,20 @@ h2, p {
 		height: 40px;
 		width: 40px;
 		border-color: transparent;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	main > article {
+		height: 700px;
+		width: 300px;
+	}
+
+	h2 {
+		font-size: 0.75rem;
+	}
+	
+	p {
+		font-size: 0.5rem;
 	}
 }
