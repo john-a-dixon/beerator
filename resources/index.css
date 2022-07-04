@@ -16,7 +16,6 @@
 }
 
 html, body, main {
-	height: 100%;
 	width: 100%;
 }
 
@@ -28,7 +27,7 @@ main {
 }
 
 main > article {
-	height: 800px;
+	height: 900px;
 	width: 500px;
 	background-color: var(--lightest-grey);
 	border-radius: 25px;
@@ -61,16 +60,22 @@ h2, p {
 	text-align: center;
 }
 
-#final-rating {
-	display: flex;
+#final-rating button {
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	border-color: transparent;
 }
 
 /***************************************************Media Queries***************************************************/
 @media only screen and (max-width: 550px) {
 	main > article {
-		height: 100%;
 		width: 100%;
 		border-radius: 0px;
+	}
+
+	button {
+		background-color: blue;
 	}
 }
 
@@ -78,17 +83,26 @@ h2, p {
 	.criterion {
 		width: 80%;
 	}
+	button {
+		background-color: black;
+	}
 }
 
 @media only screen and (max-width: 430px) {
 	.criterion {
 		width: 85%;
 	}
+	button {
+		background-color: red;
+	}
 }
 
 @media only screen and (max-width: 400px) {
 	h2 {
 		font-size: 1.3rem;
+	}
+	button {
+		background-color: yellow;
 	}
 }
 
@@ -97,10 +111,16 @@ h2, p {
 		height: 40px;
 		width: 40px;
 	}
+	button {
+		background-color: purple;
+	}
 }
 
 @media only screen and (max-width: 336px){
 	h2 {
 		font-size: 1.2rem;
+	}
+	button {
+		background-color: brown;
 	}
 }
