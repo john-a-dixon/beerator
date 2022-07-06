@@ -100,10 +100,6 @@ p {
 	color: var(--main-color);
 }
 
-button {
-	transition: background-color 0.05s;
-}
-
 button:active {
 	background-color: #caffc2;
 }
